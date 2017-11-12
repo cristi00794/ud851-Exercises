@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mToysListTextView;
+    private TextView mToysListTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         String[] toyNames = ToyBox.getToyNames();
 
         for(String toyName : toyNames){
-            mToysListTextView.append(toyName + "\n");
+            mToysListTextView.append(toyName + "\n\n\n");
         }
     }
 }
